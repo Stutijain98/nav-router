@@ -5,6 +5,8 @@ import {Router} from '@angular/router';
   selector: 'app-EditStudent',
   templateUrl: './EditStudent.html'
 })
+
+
 export class EditStudentComponent implements OnInit {
    student=[
        {Id:"1",Name:"Stuti",Department:"BCA"},
