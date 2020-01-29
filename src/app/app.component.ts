@@ -23,4 +23,10 @@ ViewStudent()
 AddStudent(){
   this.router.navigateByUrl('/AddStudent');
 }
+Login(){
+  this.router.navigateByUrl('/Login');
+}
+EditStudent(){
+   this.router.navigateByUrl('/EditStudent');
+}
 }

@@ -8,12 +8,16 @@ import {Router} from '@angular/router';
 export class StudentlistComponent implements OnInit {
 
 constructor(private router:Router){
+  student=[
+       {Id:"1",Name:"Stuti",Department:"BCA"},
+       {Id:"1",Name:"Stuti",Department:"BCA"},
+       {Id:"1",Name:"Stuti",Department:"BCA"}
+
+     ];;
 
 }
   ngOnInit(){
      
   }
-  showSubjects(){
-    this.router.navigateByUrl('/subjects');
-  }
+  
 }

@@ -10,7 +10,7 @@ const APP_LAZY_ROUTES: Routes = [
     path: 'Studentlist', component: StudentlistComponent
   },
     {
-    path: 'AddStudent', component: AddStudentComponent
+    path: 'AddStudent/:id', component: AddStudentComponent
   },
     {
     path: 'Login', component: LoginComponent

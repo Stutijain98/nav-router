@@ -1,11 +1,14 @@
+<div class ="container">
+  
 
-
-<h1>Courses</h1>
+<h1>Student List</h1>
 <div class="border-rounded"></div>
  <form class="form-inline p-2 ml-md-auto">
-      <label class="mr-2">Preferences</label>
+      <label class="mr-2">Student Department</label>
            <select><option>All</option>
                    <option>Deep studies</option>
+                   <option>Engineering</option>
+                   <option>Fashion Design</option>
            </select></form>
   <form>         
   <input type="text"></form>
@@ -16,8 +19,8 @@
   <table class="table mb-0 fs-14 table_md">
     <thead>
        <tr>
-           <th scope="col" style="min-width:110px;">Number</th>
-           <th scope="col" style="min-width:140px;">Title</th>
+           <th scope="col" style="min-width:110px;">ID</th>
+           <th scope="col" style="min-width:140px;">Name</th>
            <th scope="col" style="min-width:130px;">Credits</th>
            <th scope="col" style="min-width:140px;">Departmrnt</th>
        </tr>
@@ -25,20 +28,42 @@
     <tbody>
         <tr>
                             <td>1</td>
-                            <td>Machine Learning</td>
+                            <td>Stuti</td>
                             <td>5</td>
-                            <td>Engineering</td>
+                            <td>BCA[CC]</td>
         </tr>
         <tr>
                             
                             <td>2</td>
-                            <td>Software Engineering</td>
+                            <td>Leena</td>
                             <td>5</td>
-                            <td>Deep Studies</td>
+                            <td>IT</td>
         </tr>
     </tbody>
   </table>
 </div>
+<div>
+  <table>
+    <thead></thead>
+    <tbody *ngFor="let Students of student">
+      <tr>
+         <td>{{student.Id}}</td>
+         <td>{{student.Name}}</td>
+         <td>{{student.Department}}</td>
+        <td> <a routerLink="/Studentlist"></a>Edit</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+
+
+
 <div>
     <label>Show
            <select> <option>5</option>
@@ -51,4 +76,4 @@
 <li class="page-item active">1</li>
 <li class="page-item">2</li>
 <li class="page-item">3</li>
-          
+</div>

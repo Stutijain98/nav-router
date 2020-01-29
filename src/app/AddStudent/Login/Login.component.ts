@@ -13,5 +13,7 @@ constructor(private router:Router){
   ngOnInit(){
      
   }
-
+EditStudent(){
+   this.router.navigateByUrl('/EditStudent');
+}
 }
