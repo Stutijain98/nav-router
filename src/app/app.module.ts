@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import {StudentlistComponent} from './Studentlist/Studentlist.component';
 import {RouterModule} from "@angular/router";
+import {StudentlistComponent} from './Studentlist/Studentlist.component';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import {APP_LAZY_ROUTING} from './app.lazy.routing';
