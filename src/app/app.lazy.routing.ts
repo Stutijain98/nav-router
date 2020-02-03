@@ -2,8 +2,8 @@ import { Routes, RouterModule, PreloadAllModules,NoPreloading } from "@angular/r
 import { ModuleWithProviders } from "@angular/core";
 import {StudentlistComponent } from './Studentlist/Studentlist.component';
 import {AddStudentComponent } from './AddStudent/AddStudent.component';
-import {LoginComponent } from './AddStudent/Login/Login.component';
-import {EditStudentComponent} from './AddStudent/Login/EditStudent/EditStudent.component';
+import {LoginStudentComponent } from './login-student/login-student.component';
+import {EditStudentComponent} from './EditStudent/EditStudent.component';
 
 const APP_LAZY_ROUTES: Routes = [
    {
@@ -13,7 +13,7 @@ const APP_LAZY_ROUTES: Routes = [
     path: 'AddStudent/:id', component: AddStudentComponent
   },
     {
-    path: 'Login', component: LoginComponent
+    path: 'Login', component: LoginStudentComponent
   },
   { path: 'EditStudent', component: EditStudentComponent }
 ];

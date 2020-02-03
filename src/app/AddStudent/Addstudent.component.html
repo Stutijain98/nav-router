@@ -1,19 +1,16 @@
 <h1>Create Student</h1>
-<form> 
+<form [formGroup]="userFormGroup"> 
   <div>
-     <label>FirstName</label>
-     <input type="text">
+     <label>Id</label>
+     <input type="text"class="form-control" formControlName="Id">
   </div>
   <div>
-     <label>LastName</label>
-     <input type="text">
+     <label>Name</label>
+     <input type="text"class="form-control" formControlName="Name">
   </div>
   <div>
-     <label>Student Id</label>
-     <input type="text">
+     <label>Department</label>
+     <input type="text"class="form-control" formControlName="Department">
   </div>
-  <div>
-        <label>Password</label>
-        <input type="text">
-  </div>      
+     
   <button routerLink="/EditStudent" class="btn btn-primary">Create Student</button>
